@@ -19,6 +19,6 @@ RUN apk add --update --no-cache \
 RUN make build
 
 FROM quay.io/prometheus/busybox:latest
-COPY --from=builder /go/src/github.com/easylo/ec2-exporter/ec2-exporter /bin/ec2-exporter
-ENTRYPOINT ["/bin/ec2-exporter"]
+COPY --from=builder /go/src/github.com/easylo/ec2-exporter/prometheus-ec2-exporter /bin/prometheus-ec2-exporter
+ENTRYPOINT ["/bin/prometheus-ec2-exporter"]
 EXPOSE 9599

@@ -1,7 +1,7 @@
 version: '3'
 services:
   ec2-exporter:
-    image: laurentrichard/ec2-exporter:latest
+    image: laurentrichard/prometheus-ec2-exporter:latest
     # build: .
     ports:
       - 9599:9599 
