@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/easylo/ec2-exporter/exporter"
+	"github.com/easylo/prometheus-ec2-exporter/exporter"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/log"
 	"github.com/prometheus/common/version"
