@@ -1,5 +1,5 @@
 repository:
-    path: github.com/easylo/ec2-exporter
+    path: github.com/easylo/prometheus-ec2-exporter
 build:
     flags: -a -tags netgo
     ldflags: |
